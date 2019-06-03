@@ -3,49 +3,28 @@ https://www.colorcodepicker.com/
 À partir de hero.jpg
 
 Dominant Color
-RGB: 172, 195, 102
 HEX: #acc366
-HSL: 74, 43%, 58%
 
 Color Scheme Palette
-RGB: 216, 215, 201
 HEX: #d8d7c9
-HSL: 56, 16%, 81%
-RGB: 55, 70, 62
 HEX: #37463e
-HSL: 147, 12%, 24%
-RGB: 160, 190, 81
 HEX: #a0be51
-HSL: 76, 45%, 53%
-RGB: 198, 213, 147
 HEX: #c6d593
-HSL: 73, 44%, 70%
-RGB: 157, 68, 83
 HEX: #9d4453
-HSL: 349, 39%, 44%
-RGB: 242, 176, 81
 HEX: #f2b051
-HSL: 35, 86%, 63%
-RGB: 145, 120, 63
 HEX: #91783f
-HSL: 41, 39%, 40%
-RGB: 110, 152, 68
 HEX: #6e9844
-HSL: 90, 38%, 43%
-RGB: 176, 172, 17
 HEX: #b0ac11
-HSL: 58, 82%, 37%
-RGB: 196, 220, 116
 HEX: #c4dc74
-HSL: 73, 59%, 65%
 
 */
 :root {
-  /* --turkey: #FFF0EB; */
-  /* --blue: blue; */
-  --turkey: #fff;
+  --green: #acc366;
+  --primary: #9d4453;
+  --secondary: #37473e;
   --white: white;
-  --blue: #37463e;
+
+  font-size: 1.1rem;
 }
 
 *,
@@ -66,7 +45,7 @@ body {
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
-  background-color: var(--turkey);
+  background-color: var(--white);
 }
 
 main {
@@ -81,11 +60,8 @@ code {
 
 a[href],
 a[href]:visited {
-  color: var(--blue);
-}
-
-a[href]:not(:hover) {
-  text-decoration: none;
+  color: var(--primary);
+  text-decoration-skip-ink: auto;
 }
 
 header,
@@ -130,12 +106,21 @@ ul {
 }
 
 /* Header Logo (style as h2) */
+header {
+  padding-top: 0;
+}
 header > em {
   display: block;
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0 0 0.67em 0;
   font-weight: bold;
   font-style: normal;
+}
+
+.hero {
+  box-shadow: 0 0 0.5rem 0.5rem var(--green);
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /* Header Nav */
@@ -146,6 +131,11 @@ header nav ul :first-child {
 header nav li {
   display: inline-block;
   margin: 0 0.5em;
+}
+
+header nav li a[href],
+header nav li a[href]:visited {
+  color: var(--secondary);
 }
 
 header nav li a[href]:not(:hover) {
@@ -183,15 +173,15 @@ a[rel="tag"]:visited {
   height: 2em;
   border: 1px solid var(--white);
   background-color: var(--white);
-  color: var(--blue);
+  color: var(--primary);
   border-radius: 0.25em;
   text-decoration: none;
   margin: 0 0.5em 0.5em 0;
 }
 
 a[rel="tag"]:hover {
-  border: 1px solid var(--blue);
-  background-color: var(--blue);
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
   color: var(--white);
 }
 
@@ -225,14 +215,14 @@ textarea {
 }
 
 button {
-  border: 1px solid var(--blue);
-  background-color: var(--blue);
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
   color: var(--white);
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   :root {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
