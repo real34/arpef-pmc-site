@@ -1,20 +1,30 @@
 ---
 layout: layouts/home.njk
-title: Home
-date: 2016-01-01T00:00:00.000Z
+title: ARPEF (Association des Représentants de Parents d'Elèves de Frouzins)
 permalink: /
-navtitle: Home
+navtitle: Accueil
+ordreMenu: 10
 tags:
   - nav
 ---
-# Welcome
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
+# « Agir, Représenter et Protéger les Enfants et leur Famille »
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
+![Association des Représentants de Parents d’Elèves de Frouzins](static/img/logo.png)
 
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on Github.
+Nous sommes une association de représentants de parents d'élèves du groupe scolaire Pierre et Marie Curie de Frouzins.
 
-Or click the button below to deploy your own copy of this project to Netlify.
+Nous œuvrons afin de créer un lien entre les parents et l'école pour favoriser les échanges et surtout veiller au bien être de nos enfants.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+Nous sommes uniquement présents sur le groupe scolaire Pierre et Marie Curie et toutes nos actions et leurs les bénéfices sont entièrement reversés aux enfants de ce groupe scolaire !
+
+## Le Bureau 2018-2019
+
+- Présidente : Chantal COURTIN
+- Secrétaire : Adeline PONS
+- Trésorière : Caroline CEZAC
+- Vice-présidente : Dolors CLOTET-RIFE
+- Secrétaire adjointe : Céline MARTIN
+- Trésorière adjointe : Marlène CHARRIER
+
+[![Le bulletin de vote ARPEF de 2018](static/img/bulletin-vote-2018.jpg)](static/img/bulletin-vote-2018.jpg)

@@ -15,11 +15,11 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date de publication", name: "date", widget: "datetime" }
+      - { label: "Résumé", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Contenu", name: "body", widget: "markdown" }
   # Our pages e.g. About
   - name: "pages"
     label: "Page"
@@ -27,9 +27,9 @@ collections:
     create: false # Change to true to allow editors to create new pages
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - { label: "Navigation Title", name: "navtitle", widget: "string" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Titre dans le Menu", name: "navtitle", widget: "string" }
+      - { label: "Ordre (menu)", name: "ordreMenu", widget: "number", valueType: "int" }
       - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Contenu", name: "body", widget: "markdown" }

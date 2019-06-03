@@ -8,7 +8,9 @@ module.exports = function(eleventyConfig) {
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(dateObj)
+      .setLocale("fr")
+      .toLocaleString(DateTime.DATE_FULL);
   });
 
   // Date formatting (machine readable)
@@ -51,6 +53,12 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("nav", function(collection) {
+    return collection.getFilteredByTag("nav").sort((a, b) => {
+      return (a.data.ordreMenu || 100) - (b.data.ordreMenu || 100);
+    });
+  });
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin");
@@ -68,8 +76,9 @@ module.exports = function(eleventyConfig) {
     permalink: false
   };
 
-  eleventyConfig.setLibrary("md", markdownIt(options)
-    .use(markdownItAnchor, opts)
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt(options).use(markdownItAnchor, opts)
   );
 
   return {

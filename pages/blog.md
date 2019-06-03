@@ -1,9 +1,9 @@
 ---
 layout: layouts/blog.njk
-title: Blog
+title: Actualités
 tags:
   - nav
-navtitle: Blog
-date: 2017-01-01
+navtitle: Actualités
+ordreMenu: 20
 permalink: /blog/index.html
 ---

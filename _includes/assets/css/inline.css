@@ -1,157 +1,208 @@
+/*
+https://www.colorcodepicker.com/
+À partir de hero.jpg
+
+Dominant Color
+RGB: 172, 195, 102
+HEX: #acc366
+HSL: 74, 43%, 58%
+
+Color Scheme Palette
+RGB: 216, 215, 201
+HEX: #d8d7c9
+HSL: 56, 16%, 81%
+RGB: 55, 70, 62
+HEX: #37463e
+HSL: 147, 12%, 24%
+RGB: 160, 190, 81
+HEX: #a0be51
+HSL: 76, 45%, 53%
+RGB: 198, 213, 147
+HEX: #c6d593
+HSL: 73, 44%, 70%
+RGB: 157, 68, 83
+HEX: #9d4453
+HSL: 349, 39%, 44%
+RGB: 242, 176, 81
+HEX: #f2b051
+HSL: 35, 86%, 63%
+RGB: 145, 120, 63
+HEX: #91783f
+HSL: 41, 39%, 40%
+RGB: 110, 152, 68
+HEX: #6e9844
+HSL: 90, 38%, 43%
+RGB: 176, 172, 17
+HEX: #b0ac11
+HSL: 58, 82%, 37%
+RGB: 196, 220, 116
+HEX: #c4dc74
+HSL: 73, 59%, 65%
+
+*/
 :root {
-	--turkey: #FFF0EB;
-	--white: white;
-	--blue: blue;
+  /* --turkey: #FFF0EB; */
+  /* --blue: blue; */
+  --turkey: #fff;
+  --white: white;
+  --blue: #37463e;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 html,
 body {
-	padding: 0;
-	margin: 0;
-	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 body {
-	display: grid;
-	height: 100vh;
-	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--turkey);
 }
 
 main {
-	max-width: 37.5em;
+  max-width: 37.5em;
 }
 
 p,
 pre,
 code {
-	line-height: 1.5;
+  line-height: 1.5;
 }
 
 a[href],
 a[href]:visited {
-	color: var(--blue);
+  color: var(--blue);
 }
 
 a[href]:not(:hover) {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 header,
 main,
 footer {
-	padding: 1em;
+  padding: 1em;
 }
 
 main {
-	padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 main :first-child,
 main > article :first-child {
-	margin-top: 0;
+  margin-top: 0;
+}
+
+main img {
+  max-width: 100%;
 }
 
 pre {
-	font-size: 14px;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	-moz-tab-size: 2;
-	tab-size: 2;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	padding: 1em;
-	margin: .5em 0;
+  font-size: 14px;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: 1em;
+  margin: 0.5em 0;
 }
 
 ul {
-	padding: 0;
-	list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 /* Header Logo (style as h2) */
 header > em {
-	display: block;
-	font-size: 2em;
-	margin: .67em 0;
-	font-weight: bold;
-	font-style: normal;
+  display: block;
+  font-size: 2em;
+  margin: 0.67em 0;
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* Header Nav */
 header nav ul :first-child {
-	margin-left: 0;
+  margin-left: 0;
 }
 
 header nav li {
-	display: inline-block;
-	margin: 0 .5em;
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 header nav li a[href]:not(:hover) {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 header nav li a[data-current="current item"] {
-	font-weight: 700;
-	text-decoration: underline;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 /* Posts List */
 article {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--white);
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--white);
 }
 
 main > section > article > * {
-	margin-top: 0;
-	margin-bottom: .5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 /* Post Tags */
 a[rel="tag"],
 a[rel="tag"]:visited {
-	display: inline-block;
+  display: inline-block;
   vertical-align: text-top;
   text-transform: uppercase;
-	letter-spacing: .1em;
-  font-size: .625em;
-  padding: 0 .5em;
-	line-height: 2em;
-	height: 2em;
+  letter-spacing: 0.1em;
+  font-size: 0.625em;
+  padding: 0 0.5em;
+  line-height: 2em;
+  height: 2em;
   border: 1px solid var(--white);
-	background-color: var(--white);
-	color: var(--blue);
-  border-radius: .25em;
+  background-color: var(--white);
+  color: var(--blue);
+  border-radius: 0.25em;
   text-decoration: none;
-	margin: 0 .5em .5em 0;
+  margin: 0 0.5em 0.5em 0;
 }
 
 a[rel="tag"]:hover {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 a[rel="tag"]:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 /* Contact Form */
 form {
   display: grid;
-	padding: 2em 0;
+  padding: 2em 0;
 }
 
 form label {
@@ -164,24 +215,24 @@ button {
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
-	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
+  font-size: 1rem;
+  font-family: "Avenir", "Avenir Next", sans-serif;
 }
 
 input,
 textarea {
-	border: 1px solid black;
+  border: 1px solid black;
 }
 
 button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
-	color: var(--white);
-	cursor: pointer;
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+  cursor: pointer;
 }
 
-@media screen and (min-width:768px) {
-	:root {
-		font-size: 1.1rem;
-	}
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 1.1rem;
+  }
 }
