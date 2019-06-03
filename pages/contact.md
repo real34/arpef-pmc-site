@@ -1,25 +1,31 @@
 ---
 layout: layouts/contact.njk
-title: Nous contacter
+title: Qui contacter ?
 tags:
   - nav
-navtitle: Contact
+navtitle: Contacts
 section: contact
 ordreMenu: 30
 permalink: /contact/index.html
 ---
 
-## Qui contacter ?
-
 La page [coordonnées utiles](/coordonnees-utiles) contient les coordonnées des différentes personnes en rapport avec l’activité des élèves de l’école.
 
 Pour toute autre demande, si vous ne savez pas qui contacter ou si vous souhaitez notre aide : n’hésitez pas à contacter le bureau de l’ARPEF !
 
-## Via Facebook / Messenger
+## Via Facebook / Messenger
 
 Retrouvez-nous sur la page Facebook [ARPEF Frouzins]({{ metadata.facebook}}).
 
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farpef.pmc%2F&tabs=timeline%2Cmessages&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<iframe
+title="Notre flux Facebook"
+src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farpef.pmc%2F&tabs=timeline%2Cmessages&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+width="100%" height="500"
+style="border:none;overflow:hidden;"
+scrolling="no"
+frameborder="0"
+allowTransparency="true"
+allow="encrypted-media"></iframe>
 
 ## Via email
 

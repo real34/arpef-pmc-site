@@ -1,13 +1,11 @@
 ---
 title: Coordonnées utiles
 permalink: /coordonnees-utiles/index.html
-navtitle: Coordonnées utiles
-ordreMenu: 40
-tags:
-  - nav
 ---
 
 Cette page liste les coordonnées utiles aux Parents de l’école Pierre & Marie Curie de Frouzins.
+
+En cas de question ou si vous ne savez pas qui contactez, [contactez-nous directement](/contact).
 
 ## Ecole Elémentaire publique Pierre & Marie Curie
 

@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 title: ARPEF (Association des Représentants de Parents d'Elèves de Frouzins)
 permalink: /
-navtitle: Accueil
+navtitle: L’ARPEF
 ordreMenu: 10
 tags:
   - nav
@@ -12,7 +12,7 @@ tags:
 
 ![Association des Représentants de Parents d’Elèves de Frouzins](static/img/logo.png)
 
-Nous sommes une association de représentants de parents d'élèves du groupe scolaire Pierre et Marie Curie de Frouzins.
+Nous sommes une association de représentants de parents d'élèves du **groupe scolaire Pierre et Marie Curie de Frouzins.**
 
 Nous œuvrons afin de créer un lien entre les parents et l'école pour favoriser les échanges et surtout veiller au bien être de nos enfants.
 

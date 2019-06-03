@@ -52,6 +52,7 @@ main {
   max-width: 37.5em;
 }
 
+ul,
 p,
 pre,
 code {
@@ -64,7 +65,7 @@ a[href]:visited {
   text-decoration-skip-ink: auto;
 }
 
-header,
+header nav,
 main,
 footer {
   padding: 1em;
@@ -72,6 +73,7 @@ footer {
 
 main {
   padding-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 main :first-child,
@@ -102,7 +104,7 @@ pre {
 
 ul {
   padding: 0;
-  list-style: none;
+  list-style: circle inside;
 }
 
 /* Header Logo (style as h2) */
@@ -110,20 +112,24 @@ header {
   padding-top: 0;
 }
 header > em {
-  display: block;
-  font-size: 2em;
-  margin: 0 0 0.67em 0;
-  font-weight: bold;
-  font-style: normal;
+  margin: 0;
 }
 
 .hero {
-  box-shadow: 0 0 0.5rem 0.5rem var(--green);
+  box-shadow: 0 0 5px 5px var(--green);
   max-width: 100%;
-  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  header > em {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
 /* Header Nav */
+header nav {
+  padding-top: 0.5em;
+}
 header nav ul :first-child {
   margin-left: 0;
 }
