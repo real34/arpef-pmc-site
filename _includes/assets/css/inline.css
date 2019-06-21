@@ -33,12 +33,69 @@ HEX: #c4dc74
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Luciole;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Luciole Regular"), local("Luciole-Regular"),
+    url(/static/fonts/luciole/Luciole-Regular.woff2) format("woff2"),
+    url(/static/fonts/luciole/Luciole-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: Luciole;
+  font-weight: 400;
+  font-style: italic;
+  src: local("Luciole Italic"), local("Luciole-Italic"),
+    url(/static/fonts/luciole/Luciole-Italic.woff2) format("woff2"),
+    url(/static/fonts/luciole/Luciole-Italic.woff) format("woff");
+}
+@font-face {
+  font-family: Luciole;
+  font-weight: 600;
+  font-style: normal;
+  src: local("Luciole Bold"), local("Luciole-Bold"),
+    url(/static/fonts/luciole/Luciole-Bold.woff2) format("woff2"),
+    url(/static/fonts/luciole/Luciole-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: Luciole;
+  font-weight: 600;
+  font-style: italic;
+  src: local("Luciole Bold Italic"), local("Luciole-BoldItalic"),
+    url(/static/fonts/luciole/Luciole-BoldItalic.woff2) format("woff2"),
+    url(/static/fonts/luciole/Luciole-BoldItalic.woff) format("woff");
+}
+@font-face {
+  font-family: luciole-regular;
+  src: url(/static/fonts/luciole/Luciole-Regular.woff);
+}
+.test-style-regular {
+  font-family: luciole-regular;
+}
+@font-face {
+  font-family: luciole-italic;
+  src: url(/static/fonts/luciole/Luciole-Italic.woff);
+}
+.test-style-italic {
+  font-family: luciole-italic;
+}
+@font-face {
+  font-family: luciole-bold;
+  src: url(/static/fonts/luciole/Luciole-Bold.woff);
+}
+.test-style-bold {
+  font-family: luciole-bold;
+}
+@font-face {
+  font-family: luciole-bold-italic;
+  src: url(/static/fonts/luciole/Luciole-BoldItalic.woff);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: Luciole, Georgia, "Times New Roman", Times, serif;
 }
 
 body {
